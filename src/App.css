@@ -1,0 +1,9 @@
+@import url(https://unpkg.com/bootstrap@5.2.3/dist/css/bootstrap.min.css);
+.App {
+  background-image: url(../src/images/img.png);
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  margin-top: 0;
+}
