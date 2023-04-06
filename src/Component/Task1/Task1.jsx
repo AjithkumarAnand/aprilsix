@@ -24,7 +24,7 @@ function Task1() {
     }
 
     if (password === "") {
-      setPasswordError("Phone cannot be blank");
+      setPasswordError("Password cannot be blank");
       isValid = false;
     } else {
       setPasswordError("");
@@ -51,14 +51,6 @@ function Task1() {
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
-  };
-
-  const handleBlur = () => {
-    if (password === "") {
-      setPasswordError("Password cannot be blank");
-    } else {
-      setPasswordError("");
-    }
   };
 
   return (
@@ -121,7 +113,6 @@ function Task1() {
                 type={passwordVisibility ? "text" : "password"}
                 value={password}
                 onChange={handlePasswordChange}
-                onBlur={handleBlur}
                 required
               />
               {passwordError && <div className="error">{passwordError}</div>}
